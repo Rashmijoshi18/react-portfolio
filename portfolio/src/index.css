@@ -590,3 +590,63 @@ body {
 
   }
 }
+
+/* Sidebar for mobile nav */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1500;
+  display: none;
+  flex-direction: column;
+}
+
+.mobile-sidebar.open {
+  left: 0;
+  display: flex;
+}
+
+.mobile-sidebar .close-btn {
+  font-size: 28px;
+  color: white;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.mobile-sidebar .nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-sidebar .nav-links a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile-sidebar .nav-links a:hover {
+  color: #00f0ff;
+}
+
+/* Hide desktop nav on small screens */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-sidebar {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
