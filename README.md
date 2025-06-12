@@ -43,10 +43,14 @@ If you'd like to explore or modify the code locally:
 
 
 git clone https://github.com/Rashmijoshi18/react-portfolio.git
+
+
 🔍 This will create a folder called react-portfolio and move into it.
 
 📥 Step 2: Install Dependencies
 Make sure you have Node.js and npm installed. Then, run:
+
+
 npm install
 📦 This installs all the packages your project needs (React, Vite, etc.).
 
@@ -54,6 +58,8 @@ npm install
 🚀 Step 3: Start the Development Server
 Start the local dev server with:
 npm run dev
+
+
 🟢 This will start the Vite server, and you'll see something like:
 VITE v4.x.x  ready in 300ms
 
