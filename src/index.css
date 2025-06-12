@@ -427,7 +427,7 @@ body {
 }
 
 .about-image img {
-  width: 180px;
+  width: 260px;
   border-radius: 10px;
 
   padding: 3px;
@@ -448,7 +448,7 @@ body {
 
 .about-text {
   max-width: 600px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 
   line-height: 1.6;
 }
