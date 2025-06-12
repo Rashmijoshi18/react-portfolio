@@ -43,7 +43,6 @@ If you'd like to explore or modify the code locally:
 
 
 git clone https://github.com/Rashmijoshi18/react-portfolio.git
-cd portfolio
 🔍 This will create a folder called react-portfolio and move into it.
 
 📥 Step 2: Install Dependencies
