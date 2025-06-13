@@ -43,11 +43,11 @@ const Header = () => {
                 <div className="button-group">
                     <a href="#contact" className="button">Contact Me</a>
 
-                    {/* ✅ Resume opens in new tab */}
                     <a
-                        href="/me_resume.pdf" // or use /me_resume.pdf if you rename the file
+                        href="/me_resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
+                        download
                         className="button"
                     >
                         Resume
