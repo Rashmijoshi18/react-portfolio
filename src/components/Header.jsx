@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import My_resume from '../assets/me_resume.pdf'
 
 const Header = () => {
     const [text, setText] = useState("");
@@ -44,7 +45,7 @@ const Header = () => {
                     <a href="#contact" className="button">Contact Me</a>
 
                     <a
-                        href="/me_resume.pdf"
+                        href={My_resume}
                         target="_blank"
                         rel="noopener noreferrer"
                         download
