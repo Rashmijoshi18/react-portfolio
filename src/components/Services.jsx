@@ -2,7 +2,7 @@ const Services = () => {
     const services = [
         {
             title: "Frontend Development",
-            description: "I specialize in HTML, CSS, JavaScript to create responsive, modern websites."
+            description: "I specialize in HTML, CSS, JavaScript, React, Bootstrap, Tailwind css to create responsive, modern websites."
         },
         {
             title: "Graphic Design",
