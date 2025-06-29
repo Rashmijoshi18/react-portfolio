@@ -59,7 +59,8 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #00f0ff;
+  color: #4ea5ff;;
+  /* color: #00f0ff; */
   font-weight: bold;
   font-size: 1.4rem;
 
@@ -396,82 +397,80 @@ body {
 
 
 .about-section {
-  padding: 10px 2px;
-
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #e0e0e0;
-  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  /* background-color: #0f0f1c; */
+  /* background-color:#008c99; */
+  color: #fff;
 }
 
 .about-heading {
   text-align: center;
-  font-size: 2.7rem;
-
-  font-weight: 700;
-  color: #00f0ff;
-  margin-bottom: 1px;
-  margin-top: 4%;
-
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
+
+.about-heading .highlights {
+  color: #4ea5ff;
+  border-bottom: 2px solid #4ea5ff;
+}
+/* 
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  max-width: 250px;
+  border: 3px solid #4ea5ff;
+  border-radius: 10px;
+} */
 
 .about-container {
   display: flex;
-  align-items: center;
-
+  align-items: center; /* centers image vertically */
   justify-content: center;
-  gap: 4rem;
-  padding: 20px 20px;
-
+  gap: 2rem;
   flex-wrap: wrap;
+  min-height: 400px; /* adjust as needed to give it space */
+}
 
-}
-u{
-  color:aliceblue;
-  font-size:x-large;
-}
 .about-image img {
-  width: 240px;
+  max-width: 250px;
+  border: 3px solid #4ea5ff;
   border-radius: 10px;
-
-  padding: 3px;
-
-  background-color: white;
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  object-fit: cover;
+  display: block;
 }
 
-
-.about-image img:hover {
-  transform: translateY(-5px);
-
-  box-shadow: 30px 33px 38px black;
-}
 
 .about-text {
   max-width: 600px;
-  font-size: 1.2rem;
-
-  line-height: 1.6;
 }
 
-.about-text p {
-  margin-bottom: 15px;
-
+.about-text .section-title {
+  color: #4ea5ff;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
 }
-
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;  /* align to the left side */
   }
-
+  .about-text {
+    padding: 0 1rem;
+    text-align: left;
+    width: 100%; /* ensure it takes full width */
+  }
   .about-image img {
-    width: 200px;
+    margin-bottom: 1rem;
+    max-width: 200px;
   }
 }
+
 
 /* --- Button Group --- */
 .button-group {
