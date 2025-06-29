@@ -59,8 +59,8 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #4ea5ff;;
-  /* color: #00f0ff; */
+  /* color: #4ea5ff;; */
+  color: #00f0ff;
   font-weight: bold;
   font-size: 1.4rem;
 
@@ -400,7 +400,7 @@ body {
   padding: 2rem;
   /* background-color: #0f0f1c; */
   /* background-color:#008c99; */
-  color: #fff;
+  color:white;
 }
 
 .about-heading {
@@ -410,8 +410,8 @@ body {
 }
 
 .about-heading .highlights {
-  color: #4ea5ff;
-  border-bottom: 2px solid #4ea5ff;
+  color:#ff007f;
+  /* border-bottom: 2px solid #4ea5ff; */
 }
 /* 
 .about-container {
@@ -439,18 +439,21 @@ body {
 
 .about-image img {
   max-width: 250px;
-  border: 3px solid #4ea5ff;
+  border: 3px solid aliceblue;
   border-radius: 10px;
   display: block;
 }
 
+.about1{
+  color: #00f0ff;
+}
 
 .about-text {
   max-width: 600px;
 }
 
 .about-text .section-title {
-  color: #4ea5ff;
+  color:aliceblue;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
