@@ -4,9 +4,17 @@ import flipImg from '../assets/images/flip.png';
 import travelImg from '../assets/images/travel-x.png';
 import weatherImg from '../assets/images/weather.png';
 import gameImg from '../assets/images/game.png';
+import fitImg from '../assets/images/fit.png';
 
 const Projects = () => {
   const projects = [
+    {
+      title: "FitLife",
+      description: "FitLife is a modern fitness platform offering workout programs to support your healthy lifestyle..",
+      image: fitImg,
+      link: "https://fitlife-liart.vercel.app/",
+      repo: "https://github.com/Rashmijoshi18/fitlife"
+    },
     {
       title: "Weather check",
       description: "An application that provides real-time weather updates and forecasts based on user location.",
