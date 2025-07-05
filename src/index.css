@@ -333,7 +333,95 @@ body {
   opacity: 1;
   transform: translate(0);
 }
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
+.projects h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #00f0ff;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.projects-container .card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.projects-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 9px 15px black;
+}
+
+.projects-container .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.projects-container .card-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projects-container .icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  font-size: 1.2rem;
+  color: white; /* white icons by default */
+}
+
+/* style for the live demo icon default state */
+.projects-container .live-icon {
+  background: rgba(0, 240, 255, 0.2);
+}
+
+/* style for the github icon default state */
+.projects-container .github-icon {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* hover states */
+.projects-container .icon-link:hover {
+  transform: scale(1.2);
+}
+
+.projects-container .live-icon:hover {
+  background: rgba(0, 240, 255, 0.4);
+  color: #ffffff;
+}
+
+.projects-container .github-icon:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+/* 
 
 .projects {
   max-width: 1200px;
@@ -353,7 +441,7 @@ body {
 .projects-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 60px;
 
   flex-wrap: wrap;
 }
@@ -392,7 +480,7 @@ body {
 
   margin-bottom: 10px;
 
-}
+} */
 
 
 .about-section {
