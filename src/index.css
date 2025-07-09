@@ -245,6 +245,10 @@ body {
     text-align: center;
   }
 
+  .text-content {
+    transform: translateY(-40px); /* Move entire content upward */
+  }
+
   .gradient-text {
     font-size: 3.2rem;
   }
