@@ -99,6 +99,7 @@ body {
   cursor: pointer;
   display: none;
 }
+
 .header {
   position: relative;
   height: 100vh;
@@ -233,6 +234,36 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .header {
+    padding: 0 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .gradient-text {
+    font-size: 3.2rem;
+  }
+
+  .typing-line {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
 
 
 .card,
