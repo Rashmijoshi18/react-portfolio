@@ -309,6 +309,11 @@ body {
   font-size: 1rem;
 
 }
+.services h1{
+   font-size: 2.5rem;
+  font-weight: 800;
+  /* margin-top: 2px; */
+}
 
 .services-container {
   display: flex;
@@ -473,6 +478,11 @@ body {
   opacity: 1;
   transform: translate(0);
 }
+.projects h1{
+  font-size: 2.5rem;
+  font-weight: 900;
+  /* margin-top: 50px; */
+}
 .projects {
   max-width: 1200px;
   margin: 0 auto;
@@ -556,6 +566,11 @@ body {
 .projects-container .github-icon:hover {
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
+}
+.contact  h1{
+  font-size: 2.5rem;
+  font-weight: 900;
+  
 }
 
 /* 
