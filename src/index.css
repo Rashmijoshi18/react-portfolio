@@ -626,7 +626,6 @@ body {
   overflow-x: hidden;
 }
 
-/* 🔥 Heading style enhanced */
 .about-heading {
   text-align: center;
   font-size: 3rem; /* Bigger */
@@ -682,7 +681,6 @@ body {
   font-weight: 700;
 }
 
-/* 📱 Responsive */
 @media (max-width: 768px) {
   .about-heading {
     font-size: 2.4rem;
