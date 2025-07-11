@@ -149,7 +149,6 @@ body {
   padding-top: 40px;
 }
 
-/* 👇 Text */
 .gradient-text {
   font-size: 4rem;
   font-weight: 900;
@@ -212,7 +211,6 @@ body {
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
 }
 
-/* 👇 Animations */
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -223,54 +221,60 @@ body {
   100% { transform: translateY(0); opacity: 1; }
 }
 
-/* ✅ Mobile Styles: Beautiful + Covered */
 @media (max-width: 768px) {
   .header {
     padding: 0 16px;
     height: 100vh;
-    justify-content: flex-start;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: flex-start;   
     align-items: center;
     text-align: center;
   }
-  
+
   .text-content {
-    padding-top: 0px; /* 👈 Move text upward */
+    padding-top: 0;
+    padding-bottom: 30%;
+    width: 100%;
+    /* font-size: larger; */
   }
 
-
   .gradient-text {
-    font-size: 3.2rem;
+    font-size: 3rem;
     line-height: 1.1;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .typing-line {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .subtext {
     font-size: 1.05rem;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     padding: 0 10px;
   }
 
   .button-group {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 14px;
   }
 
   .button {
-    width: 35%;
-    padding: 14px 0;
-    font-size: 1rem;
-    /* border-radius: 40%; */
+    flex: 1 1 40%;          
+    max-width: 120px;
+    min-width: 50px;
+    padding: 8px 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 30px;
+    text-align: center;
   }
 }
-
-
-
 
 .card,
 .card1 {
