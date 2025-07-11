@@ -61,7 +61,7 @@ const Header = () => {
         </h1>
 
         <h3 className="typing-line animate-slide-up">
-          <span className="type-prefix">I am a</span>
+          <span className="type-prefix">I am a </span>
           <span className="typing-text">{text}</span>
           <span className="cursor">|</span>
         </h3>
