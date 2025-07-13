@@ -461,72 +461,100 @@ body {
   opacity: 1;
   transform: translate(0);
 }
-.projects h1{
-  font-size: 2.5rem;
-  font-weight: 900;
-  /* margin-top: 50px; */
-}
 .projects {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
 .projects h1 {
-  margin-bottom: 30px;
-  font-size: 2rem;
+  margin-bottom: 40px;
+  font-size: 2.8rem;
   color: #00f0ff;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 240, 255, 0.5);
 }
 
 .projects-container {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 40px;
   flex-wrap: wrap;
 }
-
+/* 
 .projects-container .card {
   flex: 1 1 300px;
-  max-width: 350px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+} */
+/* 
+.projects-container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+} */
+ .projects-container .card {
+  flex: 1 1 300px;
+  
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .projects-container .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 8px 9px 15px black;
+  transform: translateY(-12px);
+  box-shadow: 0 16px 92px rgba(11, 13, 13, 0.2),
+              0 10px 90px rgba(0, 0, 0, 0.4);
 }
+
 
 .projects-container .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.projects-container .card:hover img {
+  transform: scale(1.02);
 }
 
 .projects-container .card-links {
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .projects-container .icon-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
+  font-size: 1.4rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
-  font-size: 1.2rem;
-  color: white; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .projects-container .live-icon {
@@ -539,83 +567,23 @@ body {
 
 .projects-container .icon-link:hover {
   transform: scale(1.2);
+  color: #ffffff;
 }
 
 .projects-container .live-icon:hover {
   background: rgba(0, 240, 255, 0.4);
-  color: #ffffff;
 }
 
 .projects-container .github-icon:hover {
   background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
 }
+
+
 .contact  h1{
   font-size: 2.5rem;
   font-weight: 900;
   
 }
-
-/* 
-
-.projects {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.projects h1 {
-  margin-bottom: 30px;
-
-  font-size: 2rem;
-
-  color: #00f0ff;
-}
-
-.projects-container {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-
-  flex-wrap: wrap;
-}
-
-.projects-container a {
-  flex: 1 1 300px;
-  max-width: 350px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.projects-container .card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-
-  padding: 15px;
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.projects-container .card:hover {
-  transform: translateY(-5px);
-
-  box-shadow: 8px 9px 15px black;
-}
-
-.projects-container .card img {
-  width: 100%;
-  height: 200px;
-
-  object-fit: cover;
-  border-radius: 8px;
-
-  margin-bottom: 10px;
-
-} */
 
 .about-section {
   padding: 2rem 1rem;
