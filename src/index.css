@@ -300,7 +300,6 @@ body {
   margin: 0 auto;
 }
 
-/* Shared Card Styles */
 .card,
 .card1 {
   background: rgba(255, 255, 255, 0.08);
@@ -319,7 +318,6 @@ body {
   max-width: 360px;
 }
 
-/* Hover Effects */
 .card:hover,
 .card1:hover {
   transform: translateY(-10px);
@@ -327,7 +325,6 @@ body {
               0 40px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Card Images */
 .card img {
   width: 100%;
   border-radius: 12px;
@@ -350,7 +347,6 @@ body {
   transform: scale(1.05);
 }
 
-/* UI/UX Specific Card */
 .uiux-card {
   border-left: 5px solid #ff007f;
   padding-left: 25px;
@@ -359,7 +355,6 @@ body {
   border-radius: 16px;
 }
 
-/* Certification List */
 .certification-list {
   text-align: left;
   padding-left: 25px;
@@ -375,7 +370,7 @@ body {
 }
 
 
-
+/* 
 .form-input {
   width: 80%;
   margin: 10px auto;
@@ -416,7 +411,193 @@ body {
   transform: scale(1.05);
 
   background-color: #008c99;
+} */
+.contact-section {
+  padding: 60px 20px;
+  /* background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364); */
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
+
+.contact-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #00f0ff;
+  text-shadow: 1px 1px 5px rgba(0, 240, 255, 0.3);
+}
+
+.highlight {
+  color: #ff007f;
+}
+
+.contact-wrapper-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.contact-info-text {
+  flex: 1 1 45%;
+  min-width: 280px;
+  text-align: left;
+  color: #ccc;
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.contact-info-text h2 {
+  font-size: 1.6rem;
+  color: #00f0ff;
+  margin-bottom: 10px;
+}
+
+.contact-info-text p {
+  margin-bottom: 15px;
+}
+
+.contact-info-text ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.contact-info-text li {
+  margin-bottom: 8px;
+  color: #eee;
+}
+
+.contact-form-container {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 35px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); */
+  transition: 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 32px 52px rgba(3, 5, 5, 0.2);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #ccc;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #070808;
+  outline: none;
+  box-shadow: 0 0 10px rgba(4, 6, 6, 0.2);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  background: #44d2e1;
+  /* background: #7c9899; */
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 240, 255, 0.3);
+}
+
+.submit-button:hover {
+  background: #428f96;
+  transform: scale(1.03);
+}
+
+@media (max-width: 992px) {
+  .contact-title {
+    font-size: 2.4rem;
+  }
+
+  .contact-wrapper-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info-text,
+  .contact-form-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .contact-info-text {
+    font-size: 0.95rem;
+  }
+
+  .contact-info-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .submit-button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 40px 10px;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 0.95rem;
+    padding: 12px 14px;
+  }
+
+  .submit-button {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
+
 
 .footer {
   background-color: #111;
