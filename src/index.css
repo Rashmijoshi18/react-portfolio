@@ -278,88 +278,102 @@ body {
     text-align: center;
   }
 }
-
-.card,
-.card1 {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-
-  padding: 15px;
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 1rem;
-
+.services {
+  padding: 50px 20px;
+  text-align: center;
 }
-.services h1{
-   font-size: 2.5rem;
+
+.services h1 {
+  font-size: 2.8rem;
   font-weight: 800;
-  /* margin-top: 2px; */
+  margin-bottom: 40px;
+  color: #00f0ff;
+  text-shadow: 1px 1px 4px rgba(0, 240, 255, 0.5);
 }
 
 .services-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
-
+  gap: 30px;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Shared Card Styles */
+.card,
+.card1 {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
 .services .card {
   flex: 1 1 300px;
-  max-width: 350px;
+  max-width: 360px;
 }
 
+/* Hover Effects */
 .card:hover,
 .card1:hover {
-  transform: translateY(-5px);
-  /* Reduced translation */
-  box-shadow: 8px 9px 15px black;
+  transform: translateY(-10px);
+  box-shadow: 0 56px 92px rgba(10, 12, 12, 0.2),
+              0 40px 40px rgba(0, 0, 0, 0.4);
 }
 
+/* Card Images */
 .card img {
   width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
 
-  border-radius: 8px;
-
-  margin-bottom: 10px;
-
+.card:hover img {
+  transform: scale(1.02);
 }
 
 .card1 img {
   width: 80%;
   margin-bottom: 20px;
-
   border-radius: 15px;
-
+  transition: transform 0.3s ease;
 }
 
+.card1:hover img {
+  transform: scale(1.05);
+}
+
+/* UI/UX Specific Card */
 .uiux-card {
   border-left: 5px solid #ff007f;
-  padding-left: 20px;
-
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 6px 15px rgba(255, 0, 127, 0.2);
-
+  padding-left: 25px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 6px 20px rgba(255, 0, 127, 0.25);
+  border-radius: 16px;
 }
 
+/* Certification List */
 .certification-list {
   text-align: left;
-  padding-left: 20px;
+  padding-left: 25px;
   margin-top: 10px;
-  font-size: 0.9rem;
-
+  font-size: 0.95rem;
   list-style-type: square;
+  color: #e0e0e0;
 }
 
 .certification-list li {
   margin-bottom: 8px;
-
-  line-height: 1.5;
+  line-height: 1.6;
 }
+
 
 
 .form-input {
