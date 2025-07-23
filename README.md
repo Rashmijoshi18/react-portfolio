@@ -2,7 +2,7 @@
 
 A clean and modern personal portfolio website built using **React**, showcasing your skills, projects, resume, and contact details.
 
-🔗 **Live Demo**: [https://your-deployed-site-url.vercel.app](https://your-deployed-site-url.vercel.app)  
+🔗 **Live Demo**: [https://your-deployed-site-url.vercel.app](https://www.rashmijoshi.me/)  
 📁 **GitHub Repo**: [github.com/Rashmijoshi18/react-portfolio](https://github.com/Rashmijoshi18/react-portfolio)
 
 ---
