@@ -41,10 +41,6 @@ const Footer = () => {
 
 	return (
 		<footer className="bg-[#111] border-t-2 border-[#00f0ff] text-gray-300 relative overflow-hidden">
-			{/* Background decorative elements */}
-			<div className="absolute top-4 left-8 w-16 h-16 bg-gradient-to-r from-[#00f0ff]/5 to-[#ff007f]/5 rounded-full blur-xl animate-pulse-slow"></div>
-			<div className="absolute bottom-4 right-8 w-20 h-20 bg-gradient-to-r from-[#ff007f]/5 to-[#00f0ff]/5 rounded-full blur-xl animate-float-slow"></div>
-
 			<div className="relative py-8 px-4">
 				<div className="max-w-6xl mx-auto">
 					{/* Main Footer Content */}
