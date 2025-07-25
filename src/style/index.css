@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+/* Custom CSS Variables for consistent theming */
+:root {
+	--bg-color: #ffffff;
+	--text-color: #111;
+	--accent-color: #00f0ff;
+	--highlight-color: #ff007f;
+	--card-bg: rgba(0, 0, 0, 0.05);
+	--input-bg: rgba(0, 0, 0, 0.05);
+	--navbar-bg: rgba(0, 0, 0, 0.9);
+	--sidebar-bg: rgba(0, 0, 0, 0.95);
+	--bg-color: #111;
+}
+
+.dark {
+	--bg-color: var(--bg-color);
+	--text-color: #fff;
+	--card-bg: rgba(255, 255, 255, 0.1);
+	--input-bg: rgba(255, 255, 255, 0.1);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Base body styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", sans-serif;
+	background: var(--bg-color);
+	color: var(--text-color);
+	overflow-x: hidden;
+	font-size: 1.2rem;
+	line-height: 1.6;
+}
+
+/* Custom Tailwind theme extensions */
+@theme {
+	--color-accent: var(--accent-color);
+	--color-highlight: var(--highlight-color);
+	--color-dark-bg: #1e1e2f;
+	--color-dark-secondary: #2c2c50;
+	--color-navbar: var(--navbar-bg);
+	--color-sidebar: var(--sidebar-bg);
+}
+
+/* Custom animations for HeroSection */
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes pulse-subtle {
+	0%,
+	100% {
+		text-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+	}
+	50% {
+		text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+	}
+}
+
+@keyframes bounce-subtle {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-2px);
+	}
+}
+
+@keyframes slide-up-delayed {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-in {
+	animation: fade-in 1s ease-out;
+}
+
+.animate-pulse-subtle {
+	animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+.animate-bounce-subtle {
+	animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+.animate-slide-up-delayed {
+	animation: slide-up-delayed 0.8s ease-out 0.3s both;
+}
+
+.animate-slide-up-more-delayed {
+	animation: slide-up-delayed 0.8s ease-out 0.6s both;
+}
+
+/* Enhanced animations for About section */
+@keyframes float-slow {
+	0%,
+	100% {
+		transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-20px) rotate(180deg);
+	}
+}
+
+@keyframes float-reverse {
+	0%,
+	100% {
+		transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		transform: translateY(20px) rotate(-180deg);
+	}
+}
+
+@keyframes fade-in-up {
+	from {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slide-in-left {
+	from {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slide-in-right {
+	from {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes text-glow {
+	0%,
+	100% {
+		text-shadow: 0 0 10px rgba(255, 0, 127, 0.2);
+	}
+	50% {
+		text-shadow: 0 0 20px rgba(255, 0, 127, 0.4), 0 0 30px rgba(0, 240, 255, 0.3);
+	}
+}
+
+@keyframes pulse-slow {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.6;
+	}
+}
+
+/* Animation classes */
+.animate-float-slow {
+	animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+	animation: float-reverse 8s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+	animation: fade-in-up 0.8s ease-out;
+}
+
+.animate-slide-in-left {
+	animation: slide-in-left 1s ease-out;
+}
+
+.animate-slide-in-right {
+	animation: slide-in-right 1.2s ease-out;
+}
+
+.animate-text-glow {
+	animation: text-glow 3s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+	animation: pulse-slow 2s ease-in-out infinite;
+}
+
+/* Animation delay classes */
+.animation-delay-100 {
+	animation-delay: 0.1s;
+}
+
+.animation-delay-200 {
+	animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+	animation-delay: 0.3s;
+}
+
+.animation-delay-400 {
+	animation-delay: 0.4s;
+}
+
+.animation-delay-600 {
+	animation-delay: 0.6s;
+}
