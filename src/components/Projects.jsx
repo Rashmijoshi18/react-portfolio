@@ -81,13 +81,13 @@ const Projects = () => {
 				<div className="grid md:grid-cols-2 xl:grid-cols-3 gap-14 mb-28">
 					{projects.map((project, index) => (
 						<div key={project.id} className="group mb-12 max-w-md mx-auto">
-							<div className="bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-[#00f0ff]/30 transition-all duration-300 hover:transform hover:scale-[1.02] h-full max-h-[600px]">
+							<div className="bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-[#00f0ff]/30 active:border-[#00f0ff]/30 transition-all duration-300 hover:transform hover:scale-[1.02] active:transform active:scale-[1.02] h-full max-h-[600px]">
 								{/* Image Container */}
 								<div className="relative">
 									<img
 										src={project.image}
 										alt={project.title}
-										className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+										className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105 group-active:scale-105"
 									/>
 
 									{/* Gradient Overlay */}
@@ -102,7 +102,7 @@ const Projects = () => {
 								{/* Content with better spacing */}
 								<div className="p-6">
 									{/* Title */}
-									<h3 className="text-lg font-bold mb-3 text-white group-hover:text-[#00f0ff] transition-colors duration-300">
+									<h3 className="text-lg font-bold mb-3 text-white group-hover:text-[#00f0ff] group-active:text-[#00f0ff] transition-colors duration-300">
 										{project.title}
 									</h3>
 
@@ -116,7 +116,7 @@ const Projects = () => {
 										{project.tech.map((tech, techIndex) => (
 											<span
 												key={techIndex}
-												className="px-3 py-1 text-xs font-medium bg-white/10 text-gray-300 rounded-full border border-white/20 hover:border-[#00f0ff]/40 hover:text-[#00f0ff] transition-colors duration-300"
+												className="px-3 py-1 text-xs font-medium bg-white/10 text-gray-300 rounded-full border border-white/20 hover:border-[#00f0ff]/40 hover:text-[#00f0ff] active:border-[#00f0ff]/40 active:text-[#00f0ff] transition-colors duration-300"
 											>
 												{tech}
 											</span>
@@ -131,7 +131,7 @@ const Projects = () => {
 												href={project.link}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="flex items-center gap-2 px-4 py-2 bg-[#00f0ff] text-black text-sm font-semibold rounded-full hover:bg-[#00d4e6] transition-colors duration-300"
+												className="flex items-center gap-2 px-4 py-2 bg-[#00f0ff] text-black text-sm font-semibold rounded-full hover:bg-[#00d4e6] active:bg-[#00d4e6] transition-colors duration-300"
 												title="View Live Demo"
 											>
 												<ArrowTopRightOnSquareIcon className="w-4 h-4" />
@@ -143,7 +143,7 @@ const Projects = () => {
 												href={project.repo}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white transition-all duration-300"
+												className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white active:bg-white/20 active:text-white transition-all duration-300"
 												title="View GitHub Repository"
 											>
 												<CodeBracketIcon className="w-5 h-5" />
@@ -163,7 +163,7 @@ const Projects = () => {
 						href="https://github.com/Rashmijoshi18"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00f0ff] to-[#44d2e1] text-black font-bold px-8 py-4 rounded-full hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
+						className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00f0ff] to-[#44d2e1] text-black font-bold px-8 py-4 rounded-full hover:scale-105 active:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 active:shadow-lg active:shadow-cyan-500/30 transition-all duration-300"
 					>
 						View All Projects
 						<ArrowRightIcon className="w-5 h-5" />

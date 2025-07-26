@@ -146,12 +146,12 @@ const Contact = () => {
 												href={info.link}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="block bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/10 hover:border-[#00f0ff]/30 hover:bg-white/8 transition-all duration-300 cursor-pointer"
+												className="block bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/10 hover:border-[#00f0ff]/30 hover:bg-white/8 active:border-[#00f0ff]/30 active:bg-white/8 hover:transform hover:scale-[1.02] active:transform active:scale-[1.02] transition-all duration-300 cursor-pointer"
 											>
 												<CardContent />
 											</a>
 										) : (
-											<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/10 hover:border-[#00f0ff]/30 transition-all duration-300">
+											<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/10 hover:border-[#00f0ff]/30 active:border-[#00f0ff]/30 hover:transform hover:scale-[1.02] active:transform active:scale-[1.02] transition-all duration-300">
 												<CardContent />
 											</div>
 										)}
@@ -163,7 +163,7 @@ const Contact = () => {
 
 					{/* Contact Form */}
 					<div className="w-full lg:flex-1 lg:max-w-lg">
-						<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-white/20 transition-all duration-300">
+						<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-white/20 active:border-white/20 hover:transform hover:scale-[1.01] active:transform active:scale-[1.01] transition-all duration-300">
 							{/* Form Header */}
 							<div className="mb-6 md:mb-8">
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-2">Send Message</h3>
@@ -181,7 +181,7 @@ const Contact = () => {
 										placeholder="Your Name*"
 										value={formData.name}
 										onChange={handleChange}
-										className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#00f0ff]/50 focus:border-[#00f0ff] text-sm sm:text-base ${
+										className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#00f0ff]/50 focus:border-[#00f0ff] hover:border-[#00f0ff]/40 text-sm sm:text-base ${
 											errors.name ? "border-red-500" : ""
 										}`}
 									/>
@@ -198,7 +198,7 @@ const Contact = () => {
 										placeholder="Email Address*"
 										value={formData.email}
 										onChange={handleChange}
-										className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#00f0ff]/50 focus:border-[#00f0ff] text-sm sm:text-base ${
+										className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#00f0ff]/50 focus:border-[#00f0ff] hover:border-[#00f0ff]/40 text-sm sm:text-base ${
 											errors.email ? "border-red-500" : ""
 										}`}
 									/>
@@ -215,7 +215,7 @@ const Contact = () => {
 										placeholder="Phone Number"
 										value={formData.phone}
 										onChange={handleChange}
-										className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#00f0ff]/50 focus:border-[#00f0ff] text-sm sm:text-base ${
+										className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#00f0ff]/50 focus:border-[#00f0ff] hover:border-[#00f0ff]/40 text-sm sm:text-base ${
 											errors.phone ? "border-red-500" : ""
 										}`}
 									/>
@@ -232,7 +232,7 @@ const Contact = () => {
 										value={formData.message}
 										onChange={handleChange}
 										rows="4"
-										className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 resize-vertical transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#00f0ff]/50 focus:border-[#00f0ff] text-sm sm:text-base ${
+										className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 resize-vertical transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#00f0ff]/50 focus:border-[#00f0ff] hover:border-[#00f0ff]/40 text-sm sm:text-base ${
 											errors.message ? "border-red-500" : ""
 										}`}
 									/>
@@ -245,7 +245,7 @@ const Contact = () => {
 								<button
 									type="submit"
 									disabled={isSubmitting}
-									className="w-full py-3 sm:py-4 px-6 bg-gradient-to-r from-[#00f0ff] to-[#44d2e1] text-black font-bold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 focus:outline-none focus:ring-2 focus:ring-[#00f0ff]/50 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
+									className="w-full py-3 sm:py-4 px-6 bg-gradient-to-r from-[#00f0ff] to-[#44d2e1] text-black font-bold rounded-xl transition-all duration-300 hover:scale-105 active:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 active:shadow-lg active:shadow-cyan-500/30 focus:outline-none focus:ring-2 focus:ring-[#00f0ff]/50 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
 								>
 									{isSubmitting ? "Sending..." : "Send Message"}
 								</button>

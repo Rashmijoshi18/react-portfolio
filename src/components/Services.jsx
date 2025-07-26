@@ -18,6 +18,7 @@ const Services = () => {
 			color: "text-[#00f0ff]",
 			bgColor: "bg-[#00f0ff]/10",
 			borderColor: "hover:border-[#00f0ff]/30",
+			activeBorderColor: "active:border-[#00f0ff]/30",
 		},
 		{
 			id: "graphic-design",
@@ -28,6 +29,7 @@ const Services = () => {
 			color: "text-[#ff007f]",
 			bgColor: "bg-[#ff007f]/10",
 			borderColor: "hover:border-[#ff007f]/30",
+			activeBorderColor: "active:border-[#ff007f]/30",
 		},
 		{
 			id: "website-creation",
@@ -38,6 +40,7 @@ const Services = () => {
 			color: "text-[#00f0ff]",
 			bgColor: "bg-[#00f0ff]/10",
 			borderColor: "hover:border-[#00f0ff]/30",
+			activeBorderColor: "active:border-[#00f0ff]/30",
 		},
 		{
 			id: "uiux-audit",
@@ -48,6 +51,7 @@ const Services = () => {
 			color: "text-[#ff007f]",
 			bgColor: "bg-[#ff007f]/10",
 			borderColor: "hover:border-[#ff007f]/30",
+			activeBorderColor: "active:border-[#ff007f]/30",
 		},
 	];
 
@@ -80,7 +84,7 @@ const Services = () => {
 					{services.map((service, index) => (
 						<div key={service.id} className="group">
 							<div
-								className={`bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 ${service.borderColor} transition-all duration-300 hover:transform hover:scale-[1.02] h-full`}
+								className={`bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 ${service.borderColor} ${service.activeBorderColor} transition-all duration-300 hover:transform hover:scale-[1.02] active:transform active:scale-[1.02] h-full`}
 							>
 								{/* Icon */}
 								<div className="flex items-center gap-4 mb-6">
@@ -98,7 +102,7 @@ const Services = () => {
 				</div>
 
 				{/* Certifications Section */}
-				<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-gray-100/30 transition-all duration-300 mb-16">
+				<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-gray-100/30 active:border-gray-100/30 transition-all duration-300 mb-16">
 					<div className="flex items-center gap-4 mb-6">
 						<div className="p-4 bg-gray-400/10 rounded-2xl text-gray-800">
 							<CheckBadgeIcon className="w-8 h-8 text-gray-200" />
@@ -128,7 +132,7 @@ const Services = () => {
 					<p className="text-gray-400 text-lg mb-6">Ready to bring your ideas to life?</p>
 					<a
 						href="#contact"
-						className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00f0ff] to-[#44d2e1] text-black font-bold px-8 py-4 rounded-full hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
+						className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00f0ff] to-[#44d2e1] text-black font-bold px-8 py-4 rounded-full hover:scale-105 active:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 active:shadow-lg active:shadow-cyan-500/30 transition-all duration-300"
 					>
 						Let's Work Together
 						<ArrowRightIcon className="w-5 h-5" />
