@@ -92,7 +92,7 @@ const Contact = () => {
 			className="py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-[#0d0d12] via-[#0d1218] to-[#0d0d17] text-white relative"
 		>
 			{/* Simple background decoration */}
-			<div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff]/5 via-transparent to-[#ff007f]/5"></div>
+			<div className="absolute inset-0 bg-gradient-to-br from-[#ff007f]/5 via-transparent to-[#00f0ff]/5"></div>
 
 			<div className="relative max-w-6xl mx-auto">
 				{/* Section Header */}
