@@ -15,7 +15,7 @@ const Projects = () => {
 			image: fitImg,
 			link: "https://fitlife-liart.vercel.app/",
 			repo: "https://github.com/Rashmijoshi18/fitlife",
-			tech: ["React", "CSS3", "JavaScript"],
+			tech: ["React", "Tailwind CSS ", "JavaScript"],
 			category: "Web App",
 		},
 		{
@@ -35,7 +35,7 @@ const Projects = () => {
 			image: travelImg,
 			link: "https://travel-x-six.vercel.app/",
 			repo: "https://github.com/Rashmijoshi18/travel-x",
-			tech: ["React", "Tailwind", "JavaScript"],
+			tech: ["HTML", "CSS3", "Vercel"],
 			category: "Travel Site",
 		},
 		{
@@ -55,13 +55,13 @@ const Projects = () => {
 			image: flipImg,
 			link: "https://flipkart-clone-exxu.vercel.app/",
 			repo: "https://github.com/Rashmijoshi18/flipkart-clone",
-			tech: ["React", "CSS3", "JavaScript"],
+			tech: ["HTML", "CSS3"],
 			category: "E-commerce",
 		},
 	];
 
 	return (
-		<section id="projects" className="py-20 px-6 bg-gradient-to-r from-[#1e1e2f] to-[#2c2c50] text-white relative">
+		<section id="projects" className="py-20 px-6 bg-gradient-to-r from-[#0f0f15] to-[#090912] text-white relative">
 			{/* Simple background decoration */}
 			<div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff]/5 via-transparent to-[#ff007f]/5"></div>
 
@@ -69,9 +69,9 @@ const Projects = () => {
 				{/* Section Header */}
 				<div className="text-center mb-20">
 					<h2 className="text-4xl md:text-5xl font-bold mb-4">
-						Latest <span className="text-[#ff007f]">Projects</span>
+						Latest <span className="text-[#00f0ff]">Projects</span>
 					</h2>
-					<div className="w-16 h-1 bg-[#ff007f] mx-auto rounded-full"></div>
+					<div className="w-16 h-1 bg-[#00f0ff] mx-auto rounded-full"></div>
 					<p className="text-gray-300 text-lg mt-6 max-w-2xl mx-auto">
 						Showcasing innovative digital solutions built with modern technologies
 					</p>

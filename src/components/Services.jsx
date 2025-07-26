@@ -59,17 +59,17 @@ const Services = () => {
 	];
 
 	return (
-		<section id="services" className="py-20 px-6 bg-[#1e1e2f] text-white relative">
+		<section id="services" className="py-20 px-6 bg-[#15151e] text-white relative">
 			{/* Simple background decoration */}
-			<div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff]/5 via-transparent to-[#ff007f]/5"></div>
+			<div className="absolute inset-0 bg-gradient-to-brbg-gradient-to-r from-[#007a87] via-transparent to-[#800040]"></div>
 
 			<div className="relative max-w-7xl mx-auto">
 				{/* Section Header */}
 				<div className="text-center mb-20">
 					<h2 className="text-4xl md:text-5xl font-bold mb-4">
-						My <span className="text-[#ff007f]">Services</span>
+						My <span className="text-[#00f0ff]">Services</span>
 					</h2>
-					<div className="w-16 h-1 bg-[#ff007f] mx-auto rounded-full"></div>
+					<div className="w-16 h-1 bg-[#00f0ff] mx-auto rounded-full"></div>
 					<p className="text-gray-300 text-lg mt-6 max-w-2xl mx-auto">
 						Transforming ideas into digital reality with modern technologies and creative solutions
 					</p>
@@ -98,12 +98,12 @@ const Services = () => {
 				</div>
 
 				{/* Certifications Section */}
-				<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-yellow-400/30 transition-all duration-300 mb-16">
+				<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-gray-100/30 transition-all duration-300 mb-16">
 					<div className="flex items-center gap-4 mb-6">
-						<div className="p-4 bg-yellow-400/10 rounded-2xl text-yellow-400">
-							<CheckBadgeIcon className="w-8 h-8 text-yellow-400" />
+						<div className="p-4 bg-gray-400/10 rounded-2xl text-gray-800">
+							<CheckBadgeIcon className="w-8 h-8 text-gray-200" />
 						</div>
-						<h3 className="text-2xl font-semibold text-yellow-400">Certifications</h3>
+						<h3 className="text-2xl font-semibold text-gray-080">Certifications</h3>
 					</div>
 
 					<p className="text-gray-300 leading-relaxed text-base mb-6">
@@ -116,7 +116,7 @@ const Services = () => {
 								key={index}
 								className="flex items-center gap-3 p-3 bg-white/5 rounded-lg border border-white/10"
 							>
-								<div className="w-2 h-2 bg-yellow-400 rounded-full flex-shrink-0"></div>
+								<div className="w-2 h-2 bg-gray-200 rounded-full flex-shrink-0"></div>
 								<span className="text-gray-300 text-sm">{cert}</span>
 							</div>
 						))}

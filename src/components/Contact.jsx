@@ -89,7 +89,7 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] text-white relative"
+			className="py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-[#0d0d12] via-[#0d1218] to-[#0d0d17] text-white relative"
 		>
 			{/* Simple background decoration */}
 			<div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff]/5 via-transparent to-[#ff007f]/5"></div>
@@ -98,9 +98,9 @@ const Contact = () => {
 				{/* Section Header */}
 				<div className="text-center mb-12 md:mb-16 lg:mb-20">
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-						Contact <span className="text-[#ff007f]">Me</span>
+						Contact <span className="text-[#00f0ff]">Me</span>
 					</h2>
-					<div className="w-16 h-1 bg-[#ff007f] mx-auto rounded-full"></div>
+					<div className="w-16 h-1 bg-[#00f0ff] mx-auto rounded-full"></div>
 					<p className="text-base sm:text-lg text-gray-300 mt-4 sm:mt-6 max-w-2xl mx-auto px-4">
 						Ready to start your next project? Let's create something amazing together!
 					</p>
