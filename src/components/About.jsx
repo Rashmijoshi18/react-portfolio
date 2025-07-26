@@ -105,7 +105,7 @@ const About = () => {
 				<div className="mt-16 sm:mt-20 text-center">
 					<h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-white">Technologies I work with</h3>
 					<div className="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-2xl mx-auto">
-						{["React", "JavaScript", "HTML/CSS", "Tailwind CSS", "Vite", "Git"].map((tech) => (
+						{["React", "JavaScript", "HTML/CSS", "Tailwind CSS", "Vite", "Git","bootstrap"].map((tech) => (
 							<span
 								key={tech}
 								className="px-4 py-2 sm:px-6 sm:py-3 bg-white/10 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium border border-white/20 hover:border-[#00f0ff]/50 hover:bg-[#00f0ff]/10 transition-all duration-300 hover:transform hover:scale-105 cursor-pointer"
