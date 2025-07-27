@@ -5,11 +5,11 @@ import me from "../assets/images/me.png";
 const About = () => {
 	return (
 		<section id="about" className="py-20 px-6 bg-[#0f0f17] text-white relative">
-			{/* Simple background decoration */}
+			
 			<div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff]/5 via-transparent to-[#ff007f]/5"></div>
 
 			<div className="relative max-w-7xl mx-auto">
-				{/* Section Header */}
+				
 				<div className="text-center mb-20">
 					<h2 className="text-4xl md:text-5xl font-bold mb-4">
 						About <span className="text-[#00f0ff]">Me</span>
@@ -17,9 +17,8 @@ const About = () => {
 					<div className="w-16 h-1 bg-[#00f0ff] mx-auto rounded-full"></div>
 				</div>
 
-				{/* Main Content */}
 				<div className="grid lg:grid-cols-5 gap-12 items-center">
-					{/* Profile Image - Takes 2 columns */}
+			
 					<div className="lg:col-span-2 flex justify-center lg:justify-end">
 						<div className="relative group">
 							{/* // className="w-full max-w-sm mx-auto rounded-2xl transition-all duration-500 hover:scale-105 shadow-2xl" */}
@@ -34,14 +33,11 @@ const About = () => {
 									/>
 								</div>
 							</div>
-
-							{/* Decorative elements */}
 							<div className="absolute -top-3 -right-3 w-6 h-6 sm:w-8 sm:h-8 bg-[#00f0ff] rounded-full animate-pulse opacity-80"></div>
 							<div className="absolute -bottom-3 -left-3 w-4 h-4 sm:w-6 sm:h-6 bg-[#ff007f] rounded-full animate-pulse animation-delay-1000 opacity-60"></div>
 						</div>
 					</div>
 
-					{/* Content - Takes 3 columns */}
 					<div className="lg:col-span-3 space-y-6">
 						{/* Who am I */}
 						<div className="group">
@@ -60,7 +56,6 @@ const About = () => {
 							</div>
 						</div>
 
-						{/* Education */}
 						<div className="group">
 							<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-[#ff007f]/30 active:border-[#ff007f]/30 transition-all duration-300 hover:transform hover:scale-[1.02] active:transform active:scale-[1.02]">
 								<div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
@@ -79,7 +74,6 @@ const About = () => {
 							</div>
 						</div>
 
-						{/* What Drives Me */}
 						<div className="group">
 							<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-white/30 active:border-white/30 transition-all duration-300 hover:transform hover:scale-[1.02] active:transform active:scale-[1.02]">
 								<div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
@@ -101,7 +95,6 @@ const About = () => {
 					</div>
 				</div>
 
-				{/* Skills/Technologies */}
 				<div className="mt-16 sm:mt-20 text-center">
 					<h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-white">Technologies I work with</h3>
 					<div className="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-2xl mx-auto">
@@ -116,7 +109,6 @@ const About = () => {
 					</div>
 				</div>
 
-				{/* Call to Action */}
 				<div className="mt-12 sm:mt-16 text-center">
 					<p className="text-gray-400 text-base sm:text-lg mb-4 sm:mb-6">Ready to collaborate on your next project?</p>
 					<a

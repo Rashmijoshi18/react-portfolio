@@ -49,7 +49,6 @@ const HeroSection = () => {
 					backgroundSize: "40px 40px",
 				}}
 			>
-				{/* Radial Overlay */}
 				<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.1),transparent_60%)] z-[1] pointer-events-none"></div>
 			</div>
 
@@ -86,8 +85,6 @@ const HeroSection = () => {
 				<p className="text-lg md:text-xl text-gray-300 mb-8 md:mb-10 leading-relaxed font-medium px-4 md:px-0 animate-slide-up-delayed">
 					Passionate about crafting engaging, user-friendly digital experiences.
 				</p>
-
-				{/* Buttons */}
 				<div className="flex flex-wrap justify-center gap-4 animate-slide-up-more-delayed">
 					<a
 						href="#contact"

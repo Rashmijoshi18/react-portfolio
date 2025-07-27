@@ -3,7 +3,6 @@ import { useState } from "react";
 const Navbar = () => {
 	const [showMenu, setShowMenu] = useState(false);
 
-	// Navigation items data
 	const navigationItems = [
 		{ id: "home", label: "Home", href: "#home" },
 		{ id: "about", label: "About", href: "#about" },
@@ -20,7 +19,6 @@ const Navbar = () => {
 		setShowMenu(false);
 	};
 
-	// Smooth scroll function
 	const handleSmoothScroll = (e, targetId) => {
 		e.preventDefault();
 		const targetElement = document.querySelector(targetId);
@@ -39,7 +37,7 @@ const Navbar = () => {
 
 	return (
 		<nav className="sticky top-0 bg-[rgba(0,0,0,0.7)] flex items-center justify-between px-8 py-4 z-[1000] shadow-lg backdrop-blur-sm">
-			{/* Logo */}
+			
 			<div className="flex items-center gap-2">
 				<a
 					href="#home"
@@ -79,7 +77,6 @@ const Navbar = () => {
 					showMenu ? "left-0 opacity-100" : "-left-56 opacity-0"
 				}`}
 			>
-				{/* Close Button */}
 				<span
 					className="text-3xl text-white self-end cursor-pointer mb-5 hover:text-[#ff007f] transition-colors duration-300 hover:rotate-90 transform transition-transform"
 					onClick={closeMenu}
@@ -103,7 +100,6 @@ const Navbar = () => {
 				</ul>
 			</div>
 
-			{/* Backdrop/Overlay for mobile menu */}
 			{showMenu && (
 				<div
 					className="fixed inset-0 bg-black bg-opacity-50 z-[1400] md:hidden backdrop-blur-sm"

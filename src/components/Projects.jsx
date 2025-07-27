@@ -63,7 +63,7 @@ const Projects = () => {
 	return (
 		<section id="projects" className="py-28 px-8 bg-gradient-to-r from-[#0f0f15] to-[#090912] text-white relative">
 			{/* Simple background decoration */}
-			<div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff]/5 via-transparent to-[#ff007f]/5"></div>
+			{/* <div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff]/5 via-transparent to-[#ff007f]/5"></div> */}
 
 			<div className="relative max-w-7xl mx-auto">
 				{/* Section Header */}
@@ -76,13 +76,11 @@ const Projects = () => {
 						Showcasing innovative digital solutions built with modern technologies
 					</p>
 				</div>
-
-				{/* Projects Grid with better spacing */}
 				<div className="grid md:grid-cols-2 xl:grid-cols-3 gap-14 mb-28">
 					{projects.map((project, index) => (
 						<div key={project.id} className="group mb-12 max-w-md mx-auto">
 							<div className="bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-[#00f0ff]/30 active:border-[#00f0ff]/30 transition-all duration-300 hover:transform hover:scale-[1.02] active:transform active:scale-[1.02] h-full max-h-[600px]">
-								{/* Image Container */}
+								
 								<div className="relative">
 									<img
 										src={project.image}
@@ -93,20 +91,15 @@ const Projects = () => {
 									{/* Gradient Overlay */}
 									<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
-									{/* Category Badge */}
 									<div className="absolute top-4 right-4 px-3 py-1 bg-[#00f0ff] text-black text-xs font-semibold rounded-full">
 										{project.category}
 									</div>
 								</div>
-
-								{/* Content with better spacing */}
 								<div className="p-6">
-									{/* Title */}
+									
 									<h3 className="text-lg font-bold mb-3 text-white group-hover:text-[#00f0ff] group-active:text-[#00f0ff] transition-colors duration-300">
 										{project.title}
 									</h3>
-
-									{/* Description */}
 									<p className="text-gray-400 leading-relaxed text-sm mb-6 min-h-[2.5rem]">
 										{project.description}
 									</p>
@@ -138,7 +131,6 @@ const Projects = () => {
 												Demo
 											</a>
 
-											{/* GitHub Repo Link */}
 											<a
 												href={project.repo}
 												target="_blank"

@@ -43,9 +43,9 @@ const Footer = () => {
 		<footer className="bg-[#111] border-t-2 border-[#00f0ff] text-gray-300 relative overflow-hidden">
 			<div className="relative py-8 px-4">
 				<div className="max-w-6xl mx-auto">
-					{/* Main Footer Content */}
+					
 					<div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
-						{/* Copyright Text */}
+						
 						<div className="flex flex-col md:flex-row items-center gap-2 text-center md:text-left">
 							<p className="text-sm font-medium">
 								&copy; {currentYear} <span className="text-[#00f0ff] font-semibold">Rashmi Joshi</span>
@@ -56,7 +56,6 @@ const Footer = () => {
 							</p>
 						</div>
 
-						{/* Social Links */}
 						<div className="flex items-center gap-4">
 							{socialLinks.map((social, index) => (
 								<a
@@ -69,13 +68,10 @@ const Footer = () => {
 									style={{ animationDelay: `${index * 0.1}s` }}
 								>
 									{social.icon}
-
-									{/* Hover glow effect */}
 									<div
 										className={`absolute inset-0 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${social.bgHover}`}
 									></div>
 
-									{/* Tooltip */}
 									<div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
 										{social.name}
 									</div>
@@ -84,10 +80,8 @@ const Footer = () => {
 						</div>
 					</div>
 
-					{/* Divider */}
 					<div className="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-4"></div>
 
-					{/* Additional Footer Info */}
 					<div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400">
 						<div className="flex items-center gap-4">
 							<p>Built with ❤️ using React & Tailwind CSS</p>
@@ -100,8 +94,6 @@ const Footer = () => {
 							</span>
 						</div>
 					</div>
-
-					{/* Back to Top Button */}
 					<div className="absolute top-4 right-4">
 						<button
 							onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

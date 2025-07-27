@@ -89,13 +89,12 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-[#0d0d12] via-[#0d1218] to-[#0d0d17] text-white relative"
+			className="py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-[#3a3a60] via-[#090e13] to-[#070711] text-white relative"
 		>
-			{/* Simple background decoration */}
-			<div className="absolute inset-0 bg-gradient-to-br from-[#ff007f]/5 via-transparent to-[#00f0ff]/5"></div>
+			{/* <div className="absolute inset-0 bg-gradient-to-br from-[#ff007f]/5 via-transparent to-[#00f0ff]/5"></div> */}
 
 			<div className="relative max-w-6xl mx-auto">
-				{/* Section Header */}
+				
 				<div className="text-center mb-12 md:mb-16 lg:mb-20">
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
 						Contact <span className="text-[#00f0ff]">Me</span>
@@ -106,9 +105,8 @@ const Contact = () => {
 					</p>
 				</div>
 
-				{/* Contact Content */}
 				<div className="flex flex-col lg:flex-row justify-between items-start gap-8 md:gap-10 lg:gap-12">
-					{/* Contact Information */}
+					
 					<div className="w-full lg:flex-1 lg:max-w-lg">
 						<div className="mb-6 md:mb-8">
 							<h3 className="text-xl sm:text-2xl font-semibold text-[#00f0ff] mb-3 md:mb-4">
@@ -120,7 +118,6 @@ const Contact = () => {
 							</p>
 						</div>
 
-						{/* Contact Details */}
 						<div className="space-y-3 md:space-y-4">
 							{contactInfo.map((info, index) => {
 								const CardContent = () => (
@@ -160,11 +157,9 @@ const Contact = () => {
 							})}
 						</div>
 					</div>
-
-					{/* Contact Form */}
 					<div className="w-full lg:flex-1 lg:max-w-lg">
 						<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-white/20 active:border-white/20 hover:transform hover:scale-[1.01] active:transform active:scale-[1.01] transition-all duration-300">
-							{/* Form Header */}
+							
 							<div className="mb-6 md:mb-8">
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-2">Send Message</h3>
 								<p className="text-gray-400 text-sm sm:text-base">
@@ -173,7 +168,7 @@ const Contact = () => {
 							</div>
 
 							<form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-								{/* Name Input */}
+								
 								<div>
 									<input
 										type="text"
@@ -190,7 +185,6 @@ const Contact = () => {
 									)}
 								</div>
 
-								{/* Email Input */}
 								<div>
 									<input
 										type="email"
@@ -207,7 +201,6 @@ const Contact = () => {
 									)}
 								</div>
 
-								{/* Phone Input */}
 								<div>
 									<input
 										type="tel"
@@ -224,7 +217,6 @@ const Contact = () => {
 									)}
 								</div>
 
-								{/* Message Textarea */}
 								<div>
 									<textarea
 										name="message"
@@ -241,7 +233,6 @@ const Contact = () => {
 									)}
 								</div>
 
-								{/* Submit Button */}
 								<button
 									type="submit"
 									disabled={isSubmitting}

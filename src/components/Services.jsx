@@ -68,7 +68,7 @@ const Services = () => {
 			<div className="absolute inset-0 bg-gradient-to-brbg-gradient-to-r from-[#007a87] via-transparent to-[#800040]"></div>
 
 			<div className="relative max-w-7xl mx-auto">
-				{/* Section Header */}
+				
 				<div className="text-center mb-20">
 					<h2 className="text-4xl md:text-5xl font-bold mb-4">
 						My <span className="text-[#00f0ff]">Services</span>
@@ -86,7 +86,6 @@ const Services = () => {
 							<div
 								className={`bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 ${service.borderColor} ${service.activeBorderColor} transition-all duration-300 hover:transform hover:scale-[1.02] active:transform active:scale-[1.02] h-full`}
 							>
-								{/* Icon */}
 								<div className="flex items-center gap-4 mb-6">
 									<div className={`p-4 ${service.bgColor} rounded-2xl ${service.color}`}>
 										{service.icon}
@@ -100,8 +99,6 @@ const Services = () => {
 						</div>
 					))}
 				</div>
-
-				{/* Certifications Section */}
 				<div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-gray-100/30 active:border-gray-100/30 transition-all duration-300 mb-16">
 					<div className="flex items-center gap-4 mb-6">
 						<div className="p-4 bg-gray-400/10 rounded-2xl text-gray-800">
