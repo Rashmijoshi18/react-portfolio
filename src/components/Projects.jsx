@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRightIcon, ArrowTopRightOnSquareIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
 import flipImg from "../assets/images/flip.png";
+import typemasterImg from "../assets/images/typemaster.png";
 import travelImg from "../assets/images/travel-x.png";
 import weatherImg from "../assets/images/weather.png";
 import gameImg from "../assets/images/game.png";
@@ -8,6 +9,18 @@ import fitImg from "../assets/images/fit.png";
 
 const Projects = () => {
 	const projects = [
+		
+			{
+			id: "typemaster",
+			title: "TypeMaster",
+			description: "A typing‑practice web app that measures WPM and accuracy in real‑time via customizable tests..",
+			image: typemasterImg,
+			link: "https://type-master-seven.vercel.app/",
+			repo: "https://github.com/Rashmijoshi18/type-master",
+			tech: ["React", "Tailwind CSS", "JavaScript"],
+			category: "Educational Tool",
+		},
+		
 		{
 			id: "fitlife",
 			title: "FitLife",
@@ -62,7 +75,7 @@ const Projects = () => {
 
 	return (
 		<section id="projects" className="py-28 px-8 bg-gradient-to-r from-[#0f0f15] to-[#090912] text-white relative">
-			{/* Simple background decoration */}
+			
 			{/* <div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff]/5 via-transparent to-[#ff007f]/5"></div> */}
 
 			<div className="relative max-w-7xl mx-auto">
@@ -88,10 +101,9 @@ const Projects = () => {
 										className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105 group-active:scale-105"
 									/>
 
-									{/* Gradient Overlay */}
 									<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
-									<div className="absolute top-4 right-4 px-3 py-1 bg-[#00f0ff] text-black text-xs font-semibold rounded-full">
+									<div className="absolute top-4 right-4 px-3 py-1 bg-[#e4e6e6] text-black text-xs font-semibold rounded-full">
 										{project.category}
 									</div>
 								</div>
@@ -115,8 +127,6 @@ const Projects = () => {
 											</span>
 										))}
 									</div>
-
-									{/* Action Links */}
 									<div className="flex justify-between items-center">
 										<div className="flex gap-3">
 											{/* Live Demo Link */}
@@ -124,7 +134,7 @@ const Projects = () => {
 												href={project.link}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="flex items-center gap-2 px-4 py-2 bg-[#00f0ff] text-black text-sm font-semibold rounded-full hover:bg-[#00d4e6] active:bg-[#00d4e6] transition-colors duration-300"
+												className="flex items-center gap-2 px-4 py-2 bg-[#e4e6e6] text-black text-sm font-semibold rounded-full hover:bg-[#00d4e6] active:bg-[#00d4e6] transition-colors duration-300"
 												title="View Live Demo"
 											>
 												<ArrowTopRightOnSquareIcon className="w-4 h-4" />
@@ -147,8 +157,6 @@ const Projects = () => {
 						</div>
 					))}
 				</div>
-
-				{/* Call to Action */}
 				<div className="text-center">
 					<p className="text-gray-400 text-lg mb-6">Want to see more of my work?</p>
 					<a
